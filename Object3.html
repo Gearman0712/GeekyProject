@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <title>
+
+    </title>
+    <body>
+        <script>
+        function mobile(model_no) 
+        {
+           this.model =model_no,
+           this.price =function ()
+           {
+               document.write(this.model +"Price Rs 3000 <br>");
+           }
+        }
+        var y=10;
+        var samsung = new mobile('galaxy');
+        var nokia  = new mobile('3310');
+        if( samsung.hasOwnProperty('y'))
+        {
+            document.write(y); 
+        }else
+        {
+            document.write('better luck next time'); 
+        }
+      
+ </script>
+    </body>
+</html>

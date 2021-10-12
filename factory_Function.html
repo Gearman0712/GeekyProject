@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <title>
+
+    </title>
+    <body>
+        <script>
+        function mobile(model_no)
+        {
+            return {
+                model_no: model_no,
+                price :function()
+                {
+                    return "price is 6k";
+                }
+            }
+        }
+        var samsung = mobile('galaxy');
+        var nokia  = mobile('3310');
+document.write(samsung.model_no +" "+samsung['price']());       
+ </script>
+    </body>
+</html>

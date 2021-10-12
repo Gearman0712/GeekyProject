@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <title>
+
+    </title>
+    <body>
+        <script>
+       var fees ={
+        Rahul: 100,
+        Sumit:200,
+        Rohan :300,
+        total: function(){
+            return (100+200+300);
+        }
+
+       };
+       document.write(fees['Rahul']+" "+fees.total());
+  console.log(fees);
+  fees.Sonam = 600;
+  //fees['Sonam']=600;
+  console.log(fees);
+  fees.You =2000;
+  console.log(fees);
+  delete fees.Rahul;
+        </script>
+    </body>
+</html>

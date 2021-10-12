@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+ <title>
+
+ </title>
+<body>
+
+ <script>
+   var Mobile = function()
+   {
+       
+   }
+ //prototypemethod
+Mobile.prototype.getModel =function()
+{
+    return this.model;
+}
+   var Samsung = function(model ,price)
+   {   this.model = model;
+       this.price= price;
+
+   }
+   var Lenovo = function(model )
+   {   this.model = model;
+ 
+   }
+   
+   Samsung.prototype= Object.create(Mobile.prototype);
+   Samsung.prototype.constructor =Samsung;
+   Lenovo.prototype= Object.create(Mobile.prototype);
+   Lenovo.prototype.constructor =Lenovo;
+  //document.write(m.w +"<br>");
+ var galaxy = new Samsung('Galaxy',200);
+ var fab2 = new Lenovo('Fab2',400);
+ console.log(galaxy.getModel());
+ console.log(fab2.getModel());
+
+
+ </script>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+ <title>
+
+ </title>
+<body>
+
+ <script>
+   var student = function ()
+   {
+       this.class1 = 3;
+       this.age= 10;
+       this.sex= 'F';
+   }
+   
+//  var sumit = new student(3,10);
+//  var varun = new student(4,11);
+student.prototype.school ='ggps';
+ var kindergarten = function()
+ {
+    student.call(this);
+    this.school = 'sarkari';
+ }
+
+ var sita = new kindergarten();
+ var ram = new student();
+console.log(sita.age);
+console.log(ram.age);
+
+console.log(sita.school);
+console.log(ram.school);
+
+
+ </script>
+
+</body>
+
+</html>

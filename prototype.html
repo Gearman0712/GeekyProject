@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+ <title>
+
+ </title>
+<body>
+
+ <script>
+   var Mobile = function(model_no){
+   this.model = model_no;
+   this.price = function()
+   {
+       return 200;
+   };
+
+   };
+
+  var samsung = new Mobile("galaxy");
+  var nokia = new Mobile('nokia');
+  Mobile.prototype.color ='white';
+ var b = new Array();
+console.log(Object.getPrototypeOf(b));// Array.prototype
+console.log(Object.getPrototypeOf(Array.prototype));// Object.prototype
+console.log(Object.getPrototypeOf(Object.prototype));//null
+ 
+
+
+
+
+ </script>
+
+</body>
+
+</html>

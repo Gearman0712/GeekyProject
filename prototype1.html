@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+ <title>
+
+ </title>
+<body>
+
+ <script>
+   var student = function (class1, age)
+   {
+       this.class1 = class1;
+       this.age= age;
+       this.sex= 'F';
+   }
+   
+ var student1 = new student(3,10);
+student.prototype.sex= 'M';
+console.log(student1);
+console.log(student1.age);
+console.log(student1.sex);
+student1.__proto__.sex ='T';
+console.log(student.prototype.sex);
+console.log(student1.__proto__.sex);
+
+ </script>
+
+</body>
+
+</html>
