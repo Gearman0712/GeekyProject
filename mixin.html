@@ -6,6 +6,10 @@
 <body>
 
  <script>
+     function mixin(target , ...sources)
+     {
+        Object.assign(target, ...sources);
+     }
   var talking = {
       talk:function ()
       {
@@ -25,15 +29,19 @@
       }
   }
 
-var human = Object.assign({}, talking , walking, eating);
-var robot = Object.assign({},walking,talking);
+var Human = function()
+{    
+}
+mixin(Human.prototype,eating ,talking, walking);
 
-console.log(human);
-console.log(robot);
+var Rahul = new Human();
+var sonam = new Human();
 
 
-
-
+console.log(Rahul);
+console.log(Rahul.eat());
+console.log(sonam);
+console.log(sonam.talk());
 
 
  </script>

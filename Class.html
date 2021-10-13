@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <title>
+
+ </title>
+<body>
+
+ <script>
+  class  Father{
+   getFMoney()
+  {
+      return "money father";
+  }
+
+  }
+
+  class  Son extends Father{
+   getSMoney()
+  {
+      return "money son";
+  }
+
+  }
+  class  GrandSon extends Son{
+   getGMoney()
+  {
+      return "money grand son";
+  }
+
+  }
+  var g = new GrandSon();
+  
+   console.log(g.getSMoney());
+   console.log(g.getFMoney());
+   console.log(g.getGMoney());
+ 
+ </script>
+
+</body>
+
+</html>

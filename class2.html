@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+ <title>
+
+ </title>
+<body>
+
+ <script>
+  class  Father{
+  constructor ( money)
+  {
+      this.FMoney =money;
+  }
+    getFMoney()
+  {
+      return "money father : " +this.FMoney;
+  }
+
+  }
+
+  class  Son extends Father{
+    constructor ( money1 ,money2)
+  { super(money1);
+    this.SMoney = money2;
+     
+  }
+   getSMoney()
+  {
+      return "money son" +this.SMoney;
+  }
+
+  }
+  
+  var g = new Son(3532165,75867);
+  
+   console.log(g.getSMoney());
+   console.log(g.getFMoney());
+   
+ 
+ </script>
+
+</body>
+
+</html>
